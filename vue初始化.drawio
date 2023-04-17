@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-17T11:06:09.336Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="y2tLgDcqlvdn2Wdh5vmG" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-17T11:13:10.369Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="86a7daHGW4ZlA334K2AZ" version="21.1.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="659" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -25,8 +25,8 @@
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-6" value="stateMixin()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="460" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-8" value="初始化$set , $delet，$data , $props , $watch" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="710" y="250" width="210" height="60" as="geometry" />
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-8" value="初始化$set , $delet，$data , $props , $watch&lt;br&gt;没有initState（created）之前 $data 和 $props 返回 undefined" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="710" y="210" width="210" height="130" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-10" target="Cw7nx5koGpYLiIqTJ3Ks-12">
           <mxGeometry relative="1" as="geometry" />
