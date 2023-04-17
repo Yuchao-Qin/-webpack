@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-17T16:53:27.892Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="kSf2-levfdRf1x0Ig6ZM" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-17T17:29:53.330Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="E2sL5xboMdZKFKfU0iBP" version="21.1.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="640" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="523" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -163,17 +163,37 @@
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-63" target="Cw7nx5koGpYLiIqTJ3Ks-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-63" target="Cw7nx5koGpYLiIqTJ3Ks-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-63" value="callHook created" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="2630" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="3120" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-65" value="vm.$mount()" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="460" y="2980" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-68" value="这里可以访问 $listener,$attrs,$on,$emit,$off(),$once ，$set,$delet,$nextTick,, $forceUpdate, $destory&amp;nbsp;等一些事件了" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-68" value="这里可以访问 $listener,$attrs,$on,$emit,$off(),$once ，$set,$delet,$nextTick,, $forceUpdate, $destory&amp;nbsp;等一些事件了,&lt;br&gt;注意此时 $data 和 $props 为undefined&lt;br&gt;（因为没有 initState）$children 为空数组，$refs 为空对象" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="720" y="1760" width="240" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-68" target="Cw7nx5koGpYLiIqTJ3Ks-68">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-70" value="此时 可以 获取到$data 和 $props了&lt;br&gt;注意&lt;br&gt;如果读取了计算属性 ，watch imediate&amp;nbsp; 为true ， 也会执行回掉函数" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="2640" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-74" target="Cw7nx5koGpYLiIqTJ3Ks-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-74" value="callHook beforeMount" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="410" y="3120" width="220" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-75" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="3120" width="210" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
