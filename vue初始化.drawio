@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-17T08:07:41.895Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="IqRAOhT5Qm4F7MlL4m0d" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-17T08:31:49.192Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="MOtJqbF_HagFbAzJuECG" version="21.1.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="659" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -102,17 +102,67 @@
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-31" value="initEvent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="460" y="1480" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-34" value="初始化组件上绑定的事件，包括$listeners,等自定义事件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-34" value="初始化组件上绑定的事件，包括 自定义事件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="720" y="1480" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-35" target="Cw7nx5koGpYLiIqTJ3Ks-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-35" value="initEvent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-35" target="Cw7nx5koGpYLiIqTJ3Ks-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="1760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-35" value="initRender" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="460" y="1620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-37" value="initEvent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="720" y="1620" width="200" height="60" as="geometry" />
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-37" value="绑定$slot, $scopedSlot,绑定$create Element， 响应 绑定 $attrs 和 $listeners&lt;br&gt;注意：此时 $attrs 和 $isteners, 为非递归观察" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="720" y="1590" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-43" target="Cw7nx5koGpYLiIqTJ3Ks-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-43" value="callHook beforeCreate" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="1720" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-44" target="Cw7nx5koGpYLiIqTJ3Ks-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-44" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Operator Mono&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 17px; line-height: 25px;&quot;&gt;initInjection&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="2070" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-48" target="Cw7nx5koGpYLiIqTJ3Ks-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-48" target="Cw7nx5koGpYLiIqTJ3Ks-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-48" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Operator Mono&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 17px; line-height: 25px;&quot;&gt;initState&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="2210" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-50" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Operator Mono&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 17px; line-height: 25px;&quot;&gt;绑定了props， data， methods， watch， computed&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="700" y="2180" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-52" target="Cw7nx5koGpYLiIqTJ3Ks-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-52" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Operator Mono&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 17px; line-height: 25px;&quot;&gt;initProvider&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="2350" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-54" target="Cw7nx5koGpYLiIqTJ3Ks-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-54" value="&lt;div style=&quot;color: rgb(255, 255, 255); background-color: rgb(25, 53, 73); font-family: &amp;quot;Operator Mono&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace; font-size: 17px; line-height: 25px;&quot;&gt;initState&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="2490" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-63" target="Cw7nx5koGpYLiIqTJ3Ks-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-63" value="callHook created" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="2630" width="240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-65" value="vm.$mount()" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="460" y="2980" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
