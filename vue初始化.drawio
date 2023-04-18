@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-18T05:15:13.270Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="FTdz50-TxZqozWTboxzZ" version="21.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-18T09:47:17.421Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="EiEdbJjg7_nceJswzCnS" version="21.1.8" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1207" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -189,7 +189,7 @@
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-68" target="Cw7nx5koGpYLiIqTJ3Ks-68">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-70" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;此时 可以 获取到$data 和 $props了&lt;br&gt;注意&lt;br&gt;如果读取了计算属性 ，watch imediate&amp;nbsp; 为true ， 也会同步执行回掉函数&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-70" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;此时 可以 获取到$data 和 $props了&lt;br&gt;注意&lt;br&gt;如果读取了计算属性 ，watch imediate&amp;nbsp; 为true ， 也会同步执行回掉函数，immediate 在create之前就会执行 ，在触发就是丢到事件循环里去执行&amp;nbsp;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="720" y="2640" width="530" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-74" target="Cw7nx5koGpYLiIqTJ3Ks-75">
@@ -201,13 +201,13 @@
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-74" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;callHook beforeMount&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="410" y="3120" width="220" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-75" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-75" value="由于在&lt;code style=&quot;box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; font-family: ui-monospace, SFMono-Regular, &amp;quot;SF Mono&amp;quot;, Menlo, Consolas, &amp;quot;Liberation Mono&amp;quot;, monospace; padding: 0.2em 0.4em; margin: 0px; background-color: var(--color-neutral-muted); border-radius: 6px; color: rgb(36, 41, 47); text-align: left;&quot;&gt;beforeMount&lt;/code&gt;&lt;span style=&quot;color: rgb(36, 41, 47); font-family: -apple-system, &amp;quot;system-ui&amp;quot;, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-size: 14px; text-align: left; background-color: rgb(244, 246, 248);&quot;&gt;中，虚拟DOM已经生成，因此可以在这个阶段访问和修改虚拟DOM结构。&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="720" y="3120" width="210" height="240" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-77" target="Cw7nx5koGpYLiIqTJ3Ks-79">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-77" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;生成虚拟dom 可以访问$vnode&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-77" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;挂载&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="400" y="3530" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Cw7nx5koGpYLiIqTJ3Ks-83" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Cw7nx5koGpYLiIqTJ3Ks-79" target="Cw7nx5koGpYLiIqTJ3Ks-82">
